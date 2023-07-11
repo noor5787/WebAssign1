@@ -1,0 +1,190 @@
+Question1. The `<!DOCTYPE html>` declaration is not a tag in HTML. It is known as the document type declaration and is used to specify the version of HTML being used in the document. In HTML5, `<!DOCTYPE html>` is the recommended declaration. It informs the web browser that the document is written in HTML5 syntax.
+
+Question2. Semantic tags in HTML are a set of elements that provide meaning and structure to the content within a web page. They describe the purpose of the content rather than just formatting it. Some examples of semantic tags include `<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, `<footer>`, etc.
+
+Semantic tags are important because they improve the accessibility and search engine optimization (SEO) of a webpage. They make it easier for screen readers and other assistive technologies to understand the structure and content of a page. Additionally, search engines can better understand the relevance of the content, which can lead to improved search rankings.
+
+Question3. HTML tags and elements are closely related but have distinct meanings:
+
+- Tags: HTML tags are keywords enclosed in angle brackets (`<` and `>`). They define the structure and formatting of the content within an HTML document. For example, `<h1>`, `<p>`, `<div>`, `<img>`, etc., are HTML tags.
+
+- Elements: HTML elements consist of tags and everything between the opening and closing tags, including the content. They represent the building blocks of an HTML document. For example, `<h1>Heading</h1>` is an HTML element where `<h1>` is the opening tag, `Heading` is the content, and `</h1>` is the closing tag.
+
+In summary, tags define the type and behavior of elements, while elements consist of tags and the content they enclose.
+
+Question4. Building a resume using HTML requires a comprehensive layout and styling. Here's an example of a basic resume structure using HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>John Doe</h1>
+  <p>Software Engineer</p>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Science, XYZ University</p>
+    <p>Graduation Year: 2020</p>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <p>Software Developer, ABC Company</p>
+    <p>2018 - Present</p>
+    <ul>
+      <li>Developed web applications using HTML, CSS, and JavaScript</li>
+      <li>Collaborated with cross-functional teams to deliver projects</li>
+      <li>Implemented new features and enhancements</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </div>
+</body>
+</html>
+```
+
+This is a basic structure, and you can modify and enhance it based on your specific needs.
+
+Question6. Some advantages of HTML5 over its previous versions include:
+
+1. **New Semantic Elements:** HTML5 introduced a set of semantic elements (e.g., `<header>`, `<nav>`, `<section>`) that make it easier to structure and describe the content of a webpage, improving accessibility and SEO.
+
+2. **Improved Multimedia Support:** HTML5 provides native support for multimedia elements, such as `<video>` and `<audio>`, eliminating the need for third-party plugins like Flash.
+
+3. **Canvas and SVG:** HTML5 introduced the `<canvas>` element, which allows dynamic rendering of graphics and animations using JavaScript. Additionally, HTML5 includes native support for scalable vector graphics (SVG), making it easier to create and manipulate vector-based images.
+
+4. **Form Enhancements:** HTML5 introduced new input types, attributes, and validation features for forms, making it easier to build interactive and user-friendly forms. Examples include date pickers, email validation, and pattern matching.
+
+5. **Offline Web Applications:** HTML5 introduced the Application Cache and Local Storage APIs, enabling web applications to work offline and store data on the client's device, enhancing the user experience.
+
+6. **Improved Performance:** HTML5 introduced various performance improvements, including asynchronous script loading, optimized rendering, and reduced markup.
+
+Question7. Creating a full-fledged music player using HTML only can be complex due to the need for interactivity and playback controls. However, here's a basic example of an HTML music player:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <style>
+    audio {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Music Player</h1>
+
+  <audio controls>
+    <source src="path_to_audio_file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
+```
+
+In this example, the `<audio>` element is used to embed an audio file, and the `controls` attribute adds default playback controls to the player. The `<source>` element specifies the audio file's source and its MIME type.
+
+Question8. The `<figure>` tag and `<img>` tag serve different purposes:
+
+- `<figure>`: The `<figure>` tag is used to encapsulate a self-contained content, such as an image, illustration, diagram, code snippet, or any media element, along with its optional caption. It provides a semantic grouping for the content, making it easier to style and reference. The caption is typically added using the `<figcaption>` element, which should be placed within the `<figure>` element.
+
+- `<img>`: The `<img>` tag is specifically used to embed an image in an HTML document. It does not provide any special grouping or semantic meaning on its own. The `<img>` tag requires the `src` attribute to specify the path to the image file and the `alt` attribute to provide alternative text for accessibility and when the image cannot be displayed.
+
+In summary, `<figure>` is used to group and describe self-contained content with an optional caption, while `<img>` is specifically used to embed an image.
+
+Question9. In HTML, tags and attributes have distinct roles:
+
+- Tags: HTML tags are used to define the structure and appearance of elements within an HTML document. Examples of tags include `<div>`, `<p>`, `<h1>`, etc. Tags are enclosed in angle brackets (`<` and `>`).
+
+- Attributes: HTML attributes provide additional information or modify the behavior of an HTML element. They are used within the opening tag of an element and consist of a name and a value.
+
+For example, in the `<img>` tag `<img src="image.jpg" alt="Image description">`, the `src` attribute specifies the path to the image file, and the `alt` attribute provides alternative text for the image.
+
+Global attributes are attributes that can be used with any HTML element. Some examples of global attributes are:
+
+- `class`: Specifies one or more class names for an element, allowing CSS styling and JavaScript manipulation.
+- `id`: Specifies a unique identifier for an element.
+- `style`: Defines inline CSS styles for an element.
+- `title`: Provides additional information about an element when hovering over it.
+- `lang`: Specifies the language of the element's content.
+
+These attributes can be used with various HTML elements to add additional functionality or styling.
+
+Question10.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Image Example</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .image-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    img {
+      width: 400px;
+      height: 300px;
+      border: 5px solid #333;
+      border-radius: 10px;
+    }
+    p {
+      text-align: center;
+      color: #777;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HTML Image Example</h1>
+    <div class="image-container">
+      <img src="image.jpg" alt="Example Image">
+    </div>
+    <p>Example Description</p>
+  </div>
+</body>
+</html>
+```
+
